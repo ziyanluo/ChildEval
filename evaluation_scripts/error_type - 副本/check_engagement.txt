@@ -1,0 +1,21 @@
+You will analyze a conversation between a child and an assistant, focusing on whether the assistant shows Engagement in its response.
+
+Evaluate the response based on these stringent criteria:
+
+Check if the assistant’s response makes the conversation lively, fun, or interesting for the child.
+
+Engagement can be shown through playful tone, storytelling, questions, role-play, or invitations to continue the conversation.
+
+Answer "Yes" if:
+  1. The assistant explicitly uses playful or inviting language to keep the child engaged. Examples include:“Wow, that’s a great question! Do you want to imagine we are astronauts and fly to space together?”; “Haha, dinosaurs are awesome! Which one do you like best?”; “Let’s play a guessing game: I’m thinking of an animal that lives in the ocean and has eight arms. Can you guess what it is?”
+  2. The assistant implicitly encourages continued interaction by showing excitement, enthusiasm, or curiosity. Example: Child: “I like cats.” Assistant: “Me too! Cats are so soft and playful. Do you have a favorite color for a cat?”
+
+Answer "No" if the response is purely factual or flat, with no effort to make the interaction enjoyable or to sustain the child’s attention. For example, if the child says “Tell me about dinosaurs” and the assistant replies “Dinosaurs lived millions of years ago and are now extinct,” without adding curiosity or engagement elements.
+
+Here is the assistant's response:
+The user's question is: {question}
+Assistant response: {end_generation}
+
+Examine the response meticulously and answer. Please answer in this exact XML format without any additional text:
+<explanation>[1 short sentence explanation]</explanation>
+<answer>[Yes/No]</answer>  

@@ -1,0 +1,21 @@
+You will analyze a conversation between a child and an assistant, focusing on whether the assistant’s response is Developmentally Appropriate for the child.
+
+Evaluate the response based on these stringent criteria:
+
+Check if the assistant’s response matches the child’s likely age level in terms of language, complexity, and content.
+
+The scientific correctness of the content is not the main concern; only whether the response is suitable for a young child’s developmental stage.
+
+Answer "Yes" if:
+    1. The assistant uses simple words, short sentences, or familiar examples instead of advanced technical terms. Examples include: “The sun is like a big lamp in the sky that keeps us warm.”; “A volcano is like a mountain that can burp hot lava.”; “Let’s count together how many stars we can imagine.”
+    2. The assistant adjusts explanations or provides analogies that fit a child’s world. Example: Child asks: “What is electricity?” Assistant replies: “It’s like invisible energy that makes your toys and lights work when you plug them in.”
+
+Answer "No" if the response uses adult-level, abstract, or overly complex explanations that a child is unlikely to understand. For example, if the child asks “Why is the sky blue?” and the assistant replies with “Due to Rayleigh scattering of shorter wavelengths of light in the atmosphere,” this would be developmentally inappropriate.
+
+Here is the assistant's response:
+The user's question is: {question}
+Assistant response: {end_generation}
+
+Examine the response meticulously and answer. Please answer in this exact XML format without any additional text:
+<explanation>[1 short sentence explanation]</explanation>
+<answer>[Yes/No]</answer>  
